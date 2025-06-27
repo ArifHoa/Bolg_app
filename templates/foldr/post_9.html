@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>All Posts</title>
+  {% include 'mylink/link.html' %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+<body>
+
+{% include 'mylink/naba.html' %}
+
+
+  <div class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4">
+        <img src="{% static 'image/a8.jpg'%}" alt="Programming Career" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6">
+        <h1 class="mb-4">🚀 ক্যারিয়ার গড়ুন প্রোগ্রামিং দিয়ে</h1>
+        <p>Python, JavaScript বা C দিয়ে শুরু করুন।</p>
+        <p>অনলাইন কোর্স, চ্যালেঞ্জ ও প্র্যাকটিস করুন।</p>
+        <p>ডেভেলপার, AI স্পেশালিস্ট বা গেম ডেভেলপার হতে পারেন।</p>
+        <a href="{% url 'post_list' %}" class="btn btn-secondary mt-3">🔙 Back to Home</a>
+      </div>
+    </div>
+  </div>
+  
+{% include 'mylink/footer.html' %}
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+

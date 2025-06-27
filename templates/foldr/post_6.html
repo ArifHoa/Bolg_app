@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>All Posts</title>
+  {% include 'mylink/link.html' %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+<body>
+
+{% include 'mylink/naba.html' %}
+
+
+ <div class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4">
+        <img src="{% static 'image/a10.jpg'%}" alt="Startup" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6">
+        <h1 class="mb-4">💡 স্টার্টআপ শুরু করার আগে যেগুলো জানতে হবে</h1>
+        <p>বাজার গবেষণা, MVP তৈরি, ফান্ডিং পরিকল্পনা ও টিম নির্মাণ খুব গুরুত্বপূর্ণ।</p>
+        <p>ডিজিটাল মার্কেটিং ও গ্রোথ স্ট্র্যাটেজি নিয়ে ভাবুন।</p>
+        <p>সঠিক মেন্টরশিপ পেলে সফলতা দ্রুত অর্জন সম্ভব।</p>
+        <a href="{% url 'post_list' %}" class="btn btn-secondary mt-3">🔙 Back to Home</a>
+      </div>
+    </div>
+  </div>
+
+{% include 'mylink/footer.html' %}
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+

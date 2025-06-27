@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>All Posts</title>
+  {% include 'mylink/link.html' %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+<body>
+
+{% include 'mylink/naba.html' %}
+
+  <div class="container py-5 ">
+    <h1 class="mb-4">🧘 জীবনে শান্তি আনতে যা যা করতে পারেন</h1>
+
+    <div class="col-md-6 mb-4 ">
+      <img src="{% static 'image/a6.jpeg'%}" alt="Photography at Home" class="img-fluid rounded shadow">
+      
+    </div>
+
+    <ul class="list-group">
+      <li class="list-group-item">প্রতিদিন মেডিটেশন করুন</li>
+      <li class="list-group-item">যথেষ্ট ঘুম নিশ্চিত করুন</li>
+      <li class="list-group-item">স্বাস্থ্যকর খাদ্য গ্রহণ করুন</li>
+      <li class="list-group-item">মোবাইল থেকে বিরতি নিন</li>
+      <li class="list-group-item">নিজের জন্য কিছু সময় রাখুন</li>
+    </ul>
+    <a href="{% url 'post_list' %}" class="btn btn-secondary mt-4">🔙 Back to Home</a>
+  </div>
+  
+{% include 'mylink/footer.html' %}
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+

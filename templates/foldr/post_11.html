@@ -1,0 +1,105 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>All Posts</title>
+  {% include 'mylink/link.html' %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+<body>
+
+{% include 'mylink/naba.html' %}
+
+ 
+<div class="container py-5">
+  <h2 class="mb-4">🩺 সাধারণ রোগসমূহ</h2>
+  <div class="row">
+
+    <!-- ডায়াবেটিস -->
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <h5 class="card-title">🍬 ডায়াবেটিস</h5>
+          <p class="card-text text-muted">রক্তে শর্করার পরিমাণ নিয়ন্ত্রণে ব্যর্থতা...</p>
+          <div class="collapse" id="diabetes-info">
+            <p>রক্তে শর্করার মাত্রা স্বাভাবিকের তুলনায় বেড়ে যাওয়াকে ডায়াবেটিস বলা হয়। এটি দীর্ঘমেয়াদি রোগ।</p>
+            <p>ডায়াবেটিস প্রধানত দুই প্রকার: টাইপ ১ (ইনসুলিন-নির্ভর) এবং টাইপ ২ (ইনসুলিন প্রতিরোধী)।</p>
+          </div>
+          <button class="btn btn-primary btn-sm" data-bs-toggle="collapse" data-bs-target="#diabetes-info">আরও জানুন</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- উচ্চ রক্তচাপ -->
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <h5 class="card-title">🧸 উচ্চ রক্তচাপ</h5>
+          <p class="card-text text-muted">রক্তচাপ স্বাভাবিকের চেয়ে বেশি হলে...</p>
+          <div class="collapse" id="pressure-info">
+            <p>উচ্চ রক্তচাপ এমন একটি অবস্থা যেখানে রক্ত ধমনীতে অতিরিক্ত চাপ পড়ে।</p>
+            <p>খাদ্য নিয়ন্ত্রণ, ব্যায়াম এবং ওষুধে এটি নিয়ন্ত্রণযোগ্য।</p>
+          </div>
+          <button class="btn btn-primary btn-sm" data-bs-toggle="collapse" data-bs-target="#pressure-info">আরও জানুন</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ঠান্ডা ও কাশি -->
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <h5 class="card-title">🤧 ঠান্ডা ও কাশি</h5>
+          <p class="card-text text-muted">সাধারণ ভাইরাসজনিত সমস্যা...</p>
+          <div class="collapse" id="cold-info">
+            <p>ঠান্ডা ও কাশি সাধারণত ভাইরাসজনিত এবং বিশ্রাম ও গরম পানীয়ে উপশম হয়।</p>
+            <p>চিকিৎসকের পরামর্শ দরকার যদি উপসর্গ দীর্ঘস্থায়ী হয়।</p>
+          </div>
+          <button class="btn btn-primary btn-sm" data-bs-toggle="collapse" data-bs-target="#cold-info">আরও জানুন</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- গ্যাস্ট্রিক -->
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <h5 class="card-title">🔥 গ্যাস্ট্রিক</h5>
+          <p class="card-text text-muted">পেটে গ্যাস ও অম্লতা...</p>
+          <div class="collapse" id="gastric-info">
+            <p>গ্যাস্ট্রিক সমস্যা সাধারণত অতিরিক্ত তেল, মসলা ও অনিয়মিত খাদ্যাভ্যাসে হয়।</p>
+            <p>সুষম খাবার, নিয়মিত খাওয়া ও ওষুধে উপশম মেলে।</p>
+          </div>
+          <button class="btn btn-primary btn-sm" data-bs-toggle="collapse" data-bs-target="#gastric-info">আরও জানুন</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- হাঁপানি -->
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <h5 class="card-title">😮‍🫨 হাঁপানি (Asthma)</h5>
+          <p class="card-text text-muted">শ্বাসকষ্টজনিত অসুবিধা...</p>
+          <div class="collapse" id="asthma-info">
+            <p>হাঁপানি হলো শ্বাসনালির প্রদাহজনিত সমস্যা। ধুলো, ঠান্ডা ও অ্যালার্জি প্রধান কারণ।</p>
+            <p>ইনহেলার ও নিয়মিত চিকিৎসায় নিয়ন্ত্রণে রাখা যায়।</p>
+          </div>
+          <button class="btn btn-primary btn-sm" data-bs-toggle="collapse" data-bs-target="#asthma-info">আরও জানুন</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  
+{% include 'mylink/footer.html' %}
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

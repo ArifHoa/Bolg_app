@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>All Posts</title>
+  {% include 'mylink/link.html' %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+<body>
+
+{% include 'mylink/naba.html' %}
+
+
+ <div class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4">
+        <img src="{% static 'image/a1.jpeg'%}" alt="Mobile App Earnings" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6">
+        <h1 class="mb-4">📱 মোবাইল অ্যাপ দিয়ে আয়</h1>
+        <p class="lead">আজকাল স্মার্টফোন দিয়েই বিভিন্ন অ্যাপ ব্যবহার করে আয় করা যায়।</p>
+        <p>ফ্রি ল্যান্সিং, গেমিং, কন্টেন্ট তৈরি, রেফার বোনাস—সবই মোবাইলের মাধ্যমে করা সম্ভব।</p>
+        <p>তবে যাচাই নেইলে স্ক্যাম থেকে বাঁচতে সতর্ক থাকুন।</p>
+        <a href="{% url 'post_list' %}" class="btn btn-secondary mt-3">🔙 Back to Home</a>
+      </div>
+    </div>
+  </div>
+
+
+
+{% include 'mylink/footer.html' %}
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+

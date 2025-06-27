@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">MySite</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="{% url 'post_list' %}">Home</a></li>
+
+         <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Blog
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="{% url 'post_pag1' %}">🌐 ফ্রিল্যান্সিং: স্বাধীন পেশার পথে</a></li>
+              <li><a class="dropdown-item" href="{% url 'post_pag2' %}">📱 মোবাইল অ্যাপ দিয়ে আয়</a></li>
+              <li><a class="dropdown-item" href="{% url 'post_pag3' %}">🧠 মাইন্ডসেট বদলানোর ৫টি উপায়</a></li>
+              <li><a class="dropdown-item" href="{% url 'post_pag4' %}">🖥️ ওয়েব ডেভেলপমেন্ট শেখার পথ</a></li>
+              <li><a class="dropdown-item" href="{% url 'post_pag5' %}">📚 শিক্ষার্থীদের জন্য ১০টি প্রয়োজনীয় ওয়েবসাইট</a></li>
+              <li><a class="dropdown-item" href="{% url 'post_pag6' %}">💡 স্টার্টআপ শুরু করার আগে যেগুলো জানতে হবে</a></li>
+              <li><a class="dropdown-item" href="{% url 'post_pag7' %}">💰 অনলাইনে ইনকামের সেরা ৭ উপায়</a></li>
+              <li><a class="dropdown-item" href="{% url 'post_pag8' %}">🧘 জীবনে শান্তি আনতে যা যা করতে পারেন</a></li>
+              <li><a class="dropdown-item" href="{% url 'post_pag9' %}">🚀 ক্যারিয়ার গড়ুন প্রোগ্রামিং দিয়ে</a></li>
+              <li><a class="dropdown-item" href="{% url 'post_pag10' %}">📸 ঘরে বসে ফটোগ্রাফি শেখা</a></li>
+              <li><a class="dropdown-item" href="{% url 'post_pag11' %}">🩺 সাধারণ রোগসমূহ</a></li>               
+
+            </ul>
+          </li>
+
+        <li class="nav-item"><a class="nav-link" href="{% url 'reg_sters' %}">Login</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url 'login_sites' %}">Register</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,44 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>All Posts</title>
+  {% include 'mylink/link.html' %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+<body>
+
+{% include 'mylink/naba.html' %}
+
+ <div class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4">
+        <img src="{% static 'image/a2.jpg'%}" alt="Mindset" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6">
+        <h1 class="mb-4">🧠 মাইন্ডসেট বদলানোর ৫টি উপায়</h1>
+        <p class="lead">ইতিবাচক মাইন্ডসেট গড়ার জন্য নীচের ধাপগুলো অনুসরণ করুন:</p>
+        <ul>
+          <li>নিজের জন্য প্রতিদিন সময় বরাদ্দ</li>
+          <li>ব্যর্থতা থেকে শিক্ষা নেওয়া</li>
+          <li>নিজেকে বিশ্বাস রাখা</li>
+          <li>নতুন কিছু শেখার ইচ্ছা</li>
+          <li>সফল ব্যক্তিদের অভ্যাস অনুসরণ</li>
+        </ul>
+        <a href="{% url 'post_list' %}" class="btn btn-secondary mt-3">🔙 Back to Home</a>
+      </div>
+    </div>
+  </div>
+
+
+{% include 'mylink/footer.html' %}
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+

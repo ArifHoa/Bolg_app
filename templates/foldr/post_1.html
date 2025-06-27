@@ -1,0 +1,53 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>All Posts</title>
+  {% include 'mylink/link.html' %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+<body>
+
+{% include 'mylink/naba.html' %}
+
+<div class="container py-5">
+  <div class="row align-items-center">
+    
+    <!-- Image Column -->
+    <div class="col-md-6 mb-4">
+      <img src="{% static 'image/a.png'%}" alt="Freelancing" class="img-fluid rounded shadow">
+    </div>
+
+    <!-- Content Column -->
+    <div class="col-md-6">
+      <h1 class="mb-4">🌐 ফ্রিল্যান্সিং: স্বাধীন পেশার পথে</h1>
+
+      <p class="lead">
+        বর্তমান যুগে চাকরির বিকল্প হিসেবে ফ্রিল্যান্সিং একটি অত্যন্ত জনপ্রিয় এবং সম্ভাবনাময় পেশা। এটি এমন একটি ক্ষেত্র, যেখানে মানুষ ঘরে বসেই বিশ্বের যেকোনো ক্লায়েন্টের সাথে কাজ করে উপার্জন করতে পারে।
+      </p>
+
+      <p>
+        ফ্রিল্যান্সিং মানে হলো স্বাধীনভাবে কাজ করা। এখানে আপনি নিজের সময়মতো কাজ করতে পারেন, কোনো বস বা অফিসের বাধ্যবাধকতা ছাড়াই।
+      </p>
+
+      <p>
+        সফল ফ্রিল্যান্সার হতে হলে দরকার দক্ষতা, ধৈর্য এবং পেশাগত আচরণ। সঠিক পথে এগুলেই ফ্রিল্যান্সিং হতে পারে ক্যারিয়ারের সবচেয়ে স্বাধীন এবং লাভজনক পথ।
+      </p>
+
+      <a href="{% url 'post_list' %}" class="btn btn-secondary mt-3">🔙 Back to Home</a>
+    </div>
+    
+  </div>
+</div>
+
+
+{% include 'mylink/footer.html' %}
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+

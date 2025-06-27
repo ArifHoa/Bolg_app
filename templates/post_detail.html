@@ -1,0 +1,52 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>{{ post.title }}</title>
+  {% include 'mylink/link.html' %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+{% include 'mylink/naba.html' %}
+
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card shadow rounded-4">
+        {% if post.image %}
+          <img src="{{ post.image.url }}" class="card-img-top img-fluid rounded-top" alt="{{ post.title }}" style="object-fit: cover; max-height: 300px;">
+        {% endif %}
+        <div class="card-body">
+          <h2 class="card-title">{{ post.title }}</h2>
+          <p class="card-text text-muted">{{ post.content }}</p>
+        </div>
+
+        <div class="card-footer bg-light d-flex justify-content-between flex-wrap">
+          <div class="mb-2">
+            <a href="{% url 'post_update' post.pk %}" class="btn btn-sm btn-warning">
+              <i class="bi bi-pencil-square"></i> Edit
+            </a>
+            <form method="post" action="{% url 'post_delete' post.pk %}" class="d-inline">
+              {% csrf_token %}
+              <button type="submit" class="btn btn-sm btn-danger">
+                <i class="bi bi-trash"></i> Delete
+              </button>
+            </form>
+          </div>
+
+          <a href="{% url 'post_list' %}" class="btn btn-sm btn-secondary">
+            <i class="bi bi-arrow-left-circle"></i> Back to List
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include 'mylink/footer.html' %}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+
+body{
+    background-color: rgb(251, 250, 254);
+}
+
+#demo{
+    text-align: center;
+    padding: 5px;
+}
+
+ nav {
+      background: #f0f0f0;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 10px;
+      text-decoration: none;
+      color: rgb(1, 1, 10);
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+footer a{
+ text-decoration: none;
+}
+
+
+
+
+input{
+width: 50%;
+margin: 10px;
+
+}
+
+.img-thumbnail{
+  width: 250px;
+  height: 150px;
+}
+
+.texconter{
+width: 100%;
+padding: 9px;
+
+}
+
+video{
+  width: 300px;
+  height: 150px;
+}
+form{
+margin: 50px;
+}
+
+.card_body {
+  border-radius: 12px;
+  height: auto;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.ratio {
+  border: 4px solid #deb887;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #8b4513;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+h1, h2 {
+  color: #333;
+}
+
+    .wood-card {
+      background-color: #fff8f0;
+      border: 1px solid #d0b08b;
+      border-radius: 1rem;
+    }
+
+    .card-img-top {
+      object-fit: cover;
+      height: 250px;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+    }
+
+
+
+    .blog-card {
+      border-radius: 1rem;
+      overflow: hidden;
+      height: 100%;
+    }
+
+    .blog-card img {
+      height: 200px;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .card-text-preview {
+      height: 70px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+.allstyl{
+  align-items: center;
+  justify-content: center;
+}

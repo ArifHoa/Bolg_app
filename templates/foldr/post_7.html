@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>All Posts</title>
+  {% include 'mylink/link.html' %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+<body>
+
+{% include 'mylink/naba.html' %}
+
+
+  <div class="container py-5">
+
+    <h1 class="mb-4">💰 অনলাইনে ইনকামের সেরা ৭ উপায়</h1>
+   <div class="col-md-6 mb-4">
+      <img src="{% static 'image/a6.jpg'%}" alt="Photography at Home" class="img-fluid rounded shadow">
+      
+    </div>
+
+    <ol class="list-group list-group-numbered">
+      <li class="list-group-item">ফ্রিল্যান্সিং</li>
+      <li class="list-group-item">ইউটিউব চ্যানেল</li>
+      <li class="list-group-item">অ্যাফিলিয়েট মার্কেটিং</li>
+      <li class="list-group-item">ডিজিটাল প্রোডাক্ট বিক্রি</li>
+      <li class="list-group-item">ব্লগিং</li>
+      <li class="list-group-item">অনলাইন কোর্স তৈরি</li>
+      <li class="list-group-item">মোবাইল অ্যাপ ব্যবহার</li>
+    </ol>
+    <a href="{% url 'post_list' %}" class="btn btn-secondary mt-4">🔙 Back to Home</a>
+  </div>
+  
+{% include 'mylink/footer.html' %}
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
