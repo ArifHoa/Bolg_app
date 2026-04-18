@@ -1,4 +1,5 @@
 
+#import os
 import os
 from pathlib import Path
 
@@ -6,12 +7,12 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-SECRET_KEY = 'django-insecure-vuxuku!aaq-&j!aw*)xu3!@epsi$f%f++zv3wv_w32ah8c2&xc'
+SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-vuxuku!aaq-&j!aw*)xu3!@epsi$f%f++zv3wv_w32ah8c2&xc')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv('DEBUG', 'True').lower() == 'true'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost,127.0.0.1').split(',')
 
 
 # Application definition
@@ -104,6 +105,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 
 MEDIA_URL = '/media/'
