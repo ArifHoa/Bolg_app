@@ -12,7 +12,10 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-vuxuku!aaq-&j!aw*)xu3!@eps
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', 'True').lower() == 'true'
 
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost,127.0.0.1').split(',')
+ALLOWED_HOSTS = os.getenv(
+    'ALLOWED_HOSTS',
+    'localhost,127.0.0.1,bolg-app-3.onrender.com'
+).split(',')
 
 
 # Application definition
